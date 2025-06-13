@@ -1,4 +1,4 @@
-package com.yandex.yandexhw1.ui.theme
+package com.yandex.yandexhw1.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -14,13 +14,16 @@ import androidx.compose.ui.platform.LocalContext
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
     secondary = PurpleGrey80,
-    tertiary = Pink80
+    tertiary = Pink80,
+    onBackground = GreyForNavBar
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = Purple40,
     secondary = PurpleGrey40,
-    tertiary = Pink40
+    tertiary = Pink40,
+    background = WhiteForBackground,
+    onBackground = GreyForNavBar
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
