@@ -1,4 +1,4 @@
-package com.yandex.yandexhw1.presentation.navigation
+package com.yandex.yandexhw1.presentation.navigation.bottomNavigation
 
 import com.yandex.yandexhw1.R
 

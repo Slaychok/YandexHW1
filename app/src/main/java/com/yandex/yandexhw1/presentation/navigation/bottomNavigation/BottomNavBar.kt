@@ -1,4 +1,4 @@
-package com.yandex.yandexhw1.presentation.navigation
+package com.yandex.yandexhw1.presentation.navigation.bottomNavigation
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme

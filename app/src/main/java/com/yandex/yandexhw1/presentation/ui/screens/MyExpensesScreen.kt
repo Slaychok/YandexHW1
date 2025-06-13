@@ -12,13 +12,13 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 @Composable
-fun ExpensesScreen(navController: NavController) {
+fun MyExpensesScreen(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
             .padding(16.dp)
     ) {
-        Text("Expenses")
+        Text("MyExpenses")
     }
 }
