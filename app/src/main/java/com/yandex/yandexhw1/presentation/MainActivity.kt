@@ -18,3 +18,11 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+sealed class NavRoutes(val route: String) {
+    object Expenses : NavRoutes("expenses")
+    object Incomes : NavRoutes("incomes")
+    object Account : NavRoutes("account")
+    object Articles : NavRoutes("articles")
+    object Settings : NavRoutes("settings")
+}

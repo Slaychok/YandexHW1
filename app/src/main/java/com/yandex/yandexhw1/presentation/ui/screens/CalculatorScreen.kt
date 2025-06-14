@@ -1,24 +1,29 @@
 package com.yandex.yandexhw1.presentation.ui.screens
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
+import com.yandex.yandexhw1.presentation.ui.components.ListItem
 
 @Composable
 fun CalculatorScreen(navController: NavController) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .padding(16.dp)
-    ) {
-        Text("Calculator")
+    Column {
+        ListItem(
+            leftTitle = "Баланс",
+            rightTitle = "-670 000 ₽",
+            leftIcon = "\uD83D\uDCB0",
+            leftIconBackground = Color(0xFFFFFFFF),
+            listBackground = Color(0xFFD4FAE6),
+            listHeight = 56
+        )
+        HorizontalDivider()
+        ListItem(
+            leftTitle = "Валюта",
+            rightTitle = "₽",
+            listBackground = Color(0xFFD4FAE6),
+            listHeight = 56
+        )
     }
 }

@@ -38,7 +38,9 @@ fun MainScreen(navController: NavController) {
                 CalculatorScreen(navController = navController)
             }
             composable("articles") {
-                ArticlesScreen(navController = navController)
+                ArticlesScreen(
+                    navController = navController
+                )
             }
             composable("settings") {
                 SettingsScreen(navController = navController)
